@@ -21,6 +21,7 @@ RUN apt-get -qy autoclean \
 	&& apt-get -qy clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/local/src/*
 
+# Expose squid port
 EXPOSE 3128
 
 #Run squid
